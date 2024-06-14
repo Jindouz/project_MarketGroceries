@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* .cart-container {
+  position: absolute;
+  top: 50px; 
+  right: 10px; 
+  z-index: 101;
+} */
+
+.img-zoom {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 101;
+}
+/* Style for the component in the outlet */
+/* .component-in-outlet {
+  position: relative;
+  z-index: 1; /* Lower z-index value to ensure it appears behind the cart */
+/* } */
+
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Take up remaining space */
+}
+
+.navbar-center .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center .navbar-right {
+  margin-left: auto;
+}
+
+.custom-well {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .bg-img {
+  background-image: url("https://i.imgur.com/VvT7XOB.jpeg");
+  background: linear-gradient(to right, #ffffff, #000000);
+  background: #f3f3f3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
